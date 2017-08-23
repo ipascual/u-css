@@ -1,85 +1,105 @@
 /* Practice Layout */
-
-.trash{
-	color: black;
+html {
+	font-size: 16px;
 }
-
 h1 {
-	font-size: 20px;
+	font-size: 1.5em;
+	margin: 0;
 	padding: 5px 0px 5px 0px;
 }
 
-a {
-	font-weight: bold;
+h2 {
+	font-size: 1.4em;
+	margin: 0;
+	padding: 5px 0px 20px 0px;
+}
+p {
+	line-height: 24px;
+}
+
+input {
+	border: none;
+	border-radius: 4px;
+	display: block;
+	height: 25px;
+	margin-top: 5px;
+	width: 100%;
 }
 
 /* Content */
-section.content {
+.content {
 	background-color: #e8e8e8;
 	color: #787878;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
-/* Main Menu */
-section.content .main-menu .title {
-	padding: 3px 0px 5px 10px;
+/* Header */
+.title {
+	height: 50px;
+	margin: 0;
+	overflow: hidden;
+	padding: 3px 0px 5px 15px;
 }
-
-section.content .main-menu .menu {
+.title h1 {
+	font-size: 1.5em;
+	line-height: 50px;
+}
+.menu {
 	background-color: #dcdcdc;
+	height: 40px;
+	line-height: 36px;
 }
-section.content .main-menu .menu ul {
+.menu ul {
 	overflow: hidden;
 }
-section.content .main-menu .menu ul li:first-child {
-	padding-left: 10px; /* TODO: is this valid? */
+.menu li:first-child {
+	padding-left: 15px;
 }
-section.content .main-menu .menu ul li {
+.menu ul li {
 	float: left;
 	padding: 4px 15px 4px 0px;
 }
-section.content .main-menu .menu ul li a {
+.menu a {
 	display: block;
 	text-decoration: none;
 }
 
 /* Main Content */
-section.content .main-content .left {
+.left {
 	background-color: #c8c8c8;
 	float: left;
-	padding: 10px 15px 10px 10px;
+	padding: 15px 15px 10px 15px;
 }
-section.content .main-content .left img {
+.left img {
+	clear: both;
+	width: 100%;
+	margin: 0px 15px 5px 0px;
+}
+.right {
 	float: left;
-	margin: 0px 5px 5px 0px;
-	width: 255px; /* TODO: overflow hidden doesn't fix the container */
+	padding: 10px 15px 10px 15px;
 }
-section.content .main-content .left p {
-	line-height: 18px;
-}
-section.content section.main-content div.right {
-	float: left;
-	padding: 10px 15px 10px 10px;
-}
-section.content .main-content .right {
+.right {
 	list-style: disc;
 }
 
-section.content .main-content .right p {
+.right p {
 	padding-top: 10px;
 }
 
 /* Gallery */
-section.content .gallery {
+.gallery {
 	background-color: #f5f5f5;
 	clear: both;
 	padding: 10px 15px 10px 10px;
 	overflow: hidden;
 }
 
-section.content .gallery img {
+.gallery img {
 	float: left;
 	padding: 10px;
-	width: 165px;
+	width: 250px;
 }
 
 
@@ -95,10 +115,10 @@ section.content .gallery img {
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-	section.content .main-content .left {
+	.left {
 		width: 60%;
 	}
-	section.content .main-content .right {
+	.right {
 		width: 30%;
 	}
 }
