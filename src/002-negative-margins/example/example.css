@@ -3,32 +3,25 @@ html {
 	font-size: 16px;
 }
 h1 {
+	border-bottom: 1px solid #d24f2e;
 	font-size: 1.5em;
-	margin: 0;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	line-height: 13px;
-	padding: 5px 0px 5px 0px;
+	margin-bottom: 30px;
+	padding: 5px 0 25px 0;
 }
 
 h2 {
 	font-size: 1.2em;
 	font-weight: bold;
 	margin: 0;
-	padding: 5px 0px 16px 0px;
+	padding: 5px 0 16px 0;
 }
 p {
 	line-height: 24px;
 }
 a {
 	text-decoration: none;
-}
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #d24f2e;
-	margin: 14px 0 30px;
-	padding: 0;
 }
 button {
 	background: rgb(63, 81, 181);
@@ -37,17 +30,17 @@ button {
 	background: -o-linear-gradient(90deg, rgb(63, 81, 181) 30%, rgb(63, 81, 181) 70%);
 	background: -ms-linear-gradient(90deg, rgb(63, 81, 181) 30%, rgb(63, 81, 181) 70%);
 	background: linear-gradient(0deg, rgb(63, 81, 181) 30%, rgb(63, 81, 181) 70%);
-	border: 0px;
+	border: 0;
 	border-radius: 2px;
-	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow: 0 2px 1px rgba(50, 50, 50, 0.75);
 	color: rgb(255, 255, 255);
 	font-size: 14px;
 	font-weight: bold;
-	margin: 25px 0px 25px;
+	margin: 25px 0 25px;
 	padding: 10px 16px;
-	text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
-	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	text-shadow: 0px -1px 0 rgba(30, 30, 30, 0.8);
+	-webkit-box-shadow: 0 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0 2px 1px rgba(50, 50, 50, 0.75);
 }
 
 
@@ -62,6 +55,12 @@ button {
 	overflow: auto;
 	margin-bottom: 30px;
 	padding: 35px 15px 20px 15px;
+}
+
+.greybox-footer{
+	margin-bottom: -46px;
+	min-height: 100%;
+	padding-bottom: 50px;
 }
 
 /* Simple 2-Column Layouts */
@@ -82,10 +81,7 @@ button {
 .my-sidebar-menu {
 	border-left: 1px solid #dddddd;
 	float: left;
-	padding: 10px 0px 0px 20px;
-}
-.my-sidebar-menu li {
-	line-height: 50px;
+	padding-top: 10px;
 }
 .my-sidebar-menu .mdl-list__item-icon {
 	margin-right: 32px;
@@ -115,12 +111,12 @@ button {
 }
 
 /* Footer */
-.footer{ /* TODO: why using classes for HTML5 elements */
+.footer{
 	background-color: #d24f2e;
 	padding: 15px;
 }
 .footer-menu li {
 	display: inline;
 	color: #ffffff;
-	padding: 0px 14px 0px 14px;
+	padding: 0 14px 0 14px;
 }
