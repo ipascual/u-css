@@ -12,6 +12,8 @@
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
+    <link href="./reset.css" rel="stylesheet" type="text/css">
+    <link href="./normalize.css" rel="stylesheet" type="text/css">
     <link href="./example.css" rel="stylesheet" type="text/css">
     
   </head>
@@ -32,6 +34,59 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+
+          <h2>1. Without a wrapper div, with border and negative margin</h2>
+
+          <section class="layout1">
+            <nav class="menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+            <aside>
+              <ul class="demo-list-item mdl-list">
+                <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">home</i>
+                Home
+              </span>
+                </li>
+                <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">description</i>
+                About
+              </span>
+                </li>
+                <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <i class="material-icons mdl-list__item-icon">email</i>
+                Contact US
+              </span>
+                </li>
+              </ul>
+            </aside>
+            <div class="main">
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+              <p>Lorem ipsum...</p>
+            </div>
+            <footer class="footer">
+              <ul>
+                <li><a href="#">Talos Digital</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </footer>
+          </section>
+
+
+          <h2>2. Using flex, flex-direction, and wrapper div</h2>
+
         </div>
       </main>
     </div>
