@@ -1,5 +1,75 @@
 /* Practice Layout */
 
-.trash{
+html, p {
+	font-size: 16px;
+}
+
+body {
 	color: black;
+	line-height: 1.5rem;
+}
+
+h2 {
+	color: black;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-top: 20px;
+}
+
+.layout1, .layout2 {
+	background: #ffd0c4;
+	margin: 25px 0;
+}
+
+
+/* Menu */
+.menu {
+	background: #D24F2E;
+	box-sizing: border-box;
+	clear: left;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 15px;
+	text-align: left;
+}
+.menu ul {
+	overflow: hidden;
+}
+.menu ul li {
+	display: inline;
+	padding: 15px;
+}
+.menu a {
+	color: white;
+	text-decoration: none;
+	line-height:15px;
+}
+
+/* Content */
+.sidebar {
+	background: #8cd0d2;
+	float:left;
+	margin-right: -200px;
+	position: relative;
+	width: 200px;
+}
+.main {
+	border-left: 200px solid #8cd0d2;
+	padding: 20px;
+}
+
+.wrapper {
+	display: flex;
+}
+.sidebar-flex {
+	background: #8cd0d2;
+	width: 200px;
+}
+.main-flex {
+	padding: 20px;
 }
